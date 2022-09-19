@@ -6,23 +6,247 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial sans-serif;
 }
 
 .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo {
+  height: 32px;
+  width: 228px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.logo_place_header {
+  top: 0;
+  left: 0;
+  margin:  30px 60px 0px;
+}
+
+.header__title {
+  position: relative;
+  z-index: 2;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.header__title_position {
+  margin: 0px 64px 0px;
+}
+
+.header__subtitle {
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  flex-wrap: nowrap;
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.header__subtitle_position {
+  bottom: 0;
+  left: 0;
+  margin: 0px 64px 30px;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header__main-illustration {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0;
+  padding: 0;
+}
+.header__main-illustration_place {
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.header__square-pic { 
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.header__square-pic_place {
+  top: 0;
+  right: 0;
+  margin: 64px 0px 0px;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
+}
+.brief {
+  display: flex;
+  width: 175px;
+  text-align: start;
+}
+.main-text {
+  display: flex;
+  width: 80%;
+  min-width: 784px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: start;
+  padding: 0;
+}
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+}
+.two-columns__main-text_paragraph_one {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-block-end: 30px;
+
+}
+.two-columns__main-text_paragraph_two {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-block-end: 30px;
+}
+
+.two-columns__main-text_paragraph_three {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0px;
+}
+
+.two-collumns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.digits_place {
+  margin: 100px auto 100px;
+}
+
+.digits__section-title {
+  position: relative;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  width: 60%;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+
+}
+.digits__section-title_place {
+  margin: 0px 0px 20px;
+}
+.digits__section-subtitle {
+  position: relative;
+  line-height: 34px;
+  font-size: 34px;
+  font-weight: normal;
+  display: flex;
+  width: 60%;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.digits__table {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 1100px;
+}
+
+.table__cell {
+  display: flex;
+  justify-content: space-between;
+  align-self: baseline;
+  flex-direction: column;
+  width: 250px; 
+  margin-top: 60px;
+}
+
+.table__heading {
+  display: flex;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.table__text {
+  display: flex;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-block-start: 20px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
