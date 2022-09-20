@@ -112,13 +112,6 @@
   padding: 0;
 }
 
-.two-columns__brief {
-  display: flex;
-  max-width: 175px;
-  margin: 0;
-  padding: 0;
-}
-
 .two-columns__main-text {
   display: flex;
   max-width: 80%;
@@ -131,6 +124,8 @@
 }
 
 .two-columns__brief {
+  display: flex;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
