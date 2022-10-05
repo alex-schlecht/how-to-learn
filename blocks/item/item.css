@@ -1,0 +1,10 @@
+.item {
+  text-align: center;
+  max-width: 240px;
+  margin: 0;
+  padding: 60px 100px 0px 0px;
+}
+
+.item:nth-of-type(3) {
+  padding-right: 0;
+}
