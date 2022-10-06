@@ -4,6 +4,8 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  align-content: flex-start;
+  height: fit-content;
   margin: 0;
   padding: 0;
   opacity: 1;

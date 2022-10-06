@@ -1,12 +1,12 @@
 .footer__social-icon {
-    align-self: center;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    padding: 0;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+  padding: 0;
 }
 
 .footer__social-icon:hover {
-    transition: all .5s ease;
-    opacity: 0.35;
+  transition: all .5s ease;
+  opacity: 0.35;
 }
